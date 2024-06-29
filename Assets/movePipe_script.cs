@@ -22,13 +22,7 @@ public class movePipe_script : MonoBehaviour
             Debug.Log("Pipe Deleted");
             Destroy(gameObject);
         }
-        increaseSpeed();
     }
 
-    void increaseSpeed(){
-        if (score_UI.getScore() % 2 == 0 && score_UI.getScore() != 0){
-            bird_speed+=0.001f;
-            Debug.Log(bird_speed    .ToString());
-        }   
-    }
+    
 }
